@@ -26,7 +26,7 @@ class MyDigitalMeasurer(DigitalMeasurer):
             if not bitState and not counting: 
                 counting = True
                 startLow = time
-            else if bitState and counting: 
+            elif bitState and counting: 
                 counting = False
                 endLow = time
                 lowSum = lowSum + (endLow - startLow)
